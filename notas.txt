@@ -1,0 +1,46 @@
+https://www.youtube.com/watch?v=hVulRRdXWYI
+
+Lista de comados usados.
+
+Creo el proyecto, crea el package.json:
+$ npm init --yes
+
+Instalo Express y SQLite3, sqlite3 (es el modulo de conexion, hace falta tenr al base de datos) sequelize es el gestor de consultas ORM.
+$ npm i express sqlite3 sequelize
+
+instalo modulos de bable: lo que hace es traducir codigo javascrip para que sea compatible.
+-D indica que se instala para desarrollo Develope
+$ npm i @babel/core @babel/cli @babel/preset-env @babel/node -D
+
+para correr el server.
+$ npm run babel-node
+ 
+instalamos nodemon para poder dejar corriendo la app. Instalamos como developer para que sea una dependencia quede en el server.
+Solo nos interesa para el desarrollo.
+$ npm i nodemon -D
+
+instalo algo para estructurar el codigo.
+$ npm i consign
+
+
+
+BASE DE DATOS -----------------------------------------------
+
+https://babeljs.io/
+https://www.sqlite.org/index.html
+https://sequelize.org/
+
+sqlite comandos
+Referencia: https://www.imaginanet.com/blog/primeros-pasos-con-sqlite3-comandos-basicos.html
+
+$ sqlite3 baseX.db                          crea base de datos.
+.table                                      lista tablas.
+.databases                                  lista las bases de datos.
+crate talbe products(id INT primary key);   crea tabla.
+$sqlite3 baseX.db                           accede a la base de datos.
+
+
+
+Deploy en raspberry, nano, mp2, nvm, git
+
+https://www.faztweb.com/curso/raspberrypi-nodejs-deploy-simple

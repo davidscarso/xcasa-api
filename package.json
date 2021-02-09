@@ -1,0 +1,28 @@
+{
+  "name": "xcasa-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "babel-node": "babel-node src/index.js",
+    "dev": "nodemon --exec npm run babel-node",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "david scarso",
+  "license": "MIT",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "sequelize": "^5.22.3",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "nodemon": "^2.0.4"
+  }
+}
